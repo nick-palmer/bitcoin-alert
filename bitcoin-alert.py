@@ -37,7 +37,7 @@ def check_price():
 	
 	if percentChange > priceChangeThreshold:
 		print('Price change threshold exceeded, PANIC!')
-		os.system('aplay nd-ys.mp3')
+		os.system('mpg123 nd-ys.mp3')
 		#os.system("start nd-ys.mp3")
 		#os.system("powershell -c (New-Object Media.SoundPlayer 'nd-ys.mp3').PlaySync();")
 	else:
