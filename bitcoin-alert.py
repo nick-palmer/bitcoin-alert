@@ -46,7 +46,7 @@ def check_price():
 	lastPrice = newPrice
 	
 # Schedule the price check job
-schedule.every(checkIntervalMinute).seconds.do(check_price)
+schedule.every(checkIntervalMinute).minutes.do(check_price)
 	
 # Run the job
 while True:
